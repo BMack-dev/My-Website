@@ -84,27 +84,24 @@ main {
 
 div.tgridItem {
     width: 80px;
-    height: 80px;
-    border: 5px solid rgb(202, 71, 0);
-    background-color: rgb(255, 98, 0);
+    height: auto; /* Allow height to adjust based on content */
+    border: 5px solid rgb(255, 89, 0);
+    background-color: rgb(255, 110, 19);
     padding: 10px;
-    text-align: left;
     margin: 10px;
     display: flex;
+    flex-direction: column;
     word-wrap: break-word;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
+    text-align: center;
+    color:black;
 }
 
 div.tgridItem img {
-    justify-content: center;
-    object-fit: cover;
-    align-items: center;
-    margin: 0;
     width: 60px;
-    margin-left: 15px;
-    display: flex;
+    margin-bottom: 10px; /* Add margin to separate from text */
 }
 
 div.tgridItem h5 {
@@ -113,8 +110,9 @@ div.tgridItem h5 {
     display: flex;
     word-wrap: break-word;
     align-items: center;
+    text-align: center;
 }
 
 .tgridItem a {
-    text-decoration:none;
+    text-decoration: none;
 }
